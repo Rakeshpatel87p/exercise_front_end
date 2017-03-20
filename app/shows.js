@@ -1,4 +1,4 @@
-[
+const Shows = [
   {
     "id": 1,
     "title": "Gaycation",
@@ -60,3 +60,5 @@
     "product_image_url": "/images/worldofsports.jpg"
   },
 ]
+
+module.exports = Shows;

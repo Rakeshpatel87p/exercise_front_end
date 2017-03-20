@@ -1,5 +1,6 @@
 const 
-	React = require('react');
+	React = require('react'),
+	Shows = require('../shows');
 
 const ShowTitle = React.createClass({
 	render(){
@@ -20,12 +21,27 @@ const ShowImage = React.createClass({
 });
 
 const ShowDetails = React.createClass({
+	getInitialState() {
+		return {
+			title: 'example',
+			image: '/images/gaycation.jpg',
+			episodeNumber: '22'
+		};
+	},
+	onClick(){
+		this.setState({
+			title: 'example2',
+			image: '/images/gaycation.jpg',
+			episodeNumber: '23'
+		})
+	},
 	render(){
 		return (
-			<div>
-				<ShowTitle showTitle = "example" />
-				<ShowImage showImage="/images/gaycation.jpg"/>
-				<EpisodeNumbers episodeNumbers="22"/>
+			<div onClick={this.onClick}>
+				<ShowTitle showTitle = {this.state.title} />
+				<ShowImage showImage= {this.state.image} />
+				<EpisodeNumbers episodeNumbers= {this.state.episodeNumber}/>
+				<h1>{Shows[3].title}</h1>
 			</div>
 
 		)
