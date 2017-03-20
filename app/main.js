@@ -2,10 +2,35 @@ const
 	React = require('react'),
 	ReactDOM = require('react-dom');
 
-const Shows = React.createClass({
+const ShowTitle = React.createClass({
 	render(){
-		return <h1>Hello World</h1>
+		return <h1>{this.props.showTitle}</h1>
 	}
 });
 
-ReactDOM.render(<Shows />, document.getElementById('app'))
+const EpisodeNumbers = React.createClass({
+	render(){
+		return <h1>{this.props.episodeNumbers}</h1>
+	}
+});
+
+const ShowImage = React.createClass({
+	render(){
+		return <img src={this.props.showImage} />
+	}
+});
+
+const ShowDetails = React.createClass({
+	render(){
+		return (
+			<div>
+				<ShowTitle showTitle = "example" />
+				<ShowImage showImage="/images/gaycation.jpg"/>
+				<EpisodeNumbers episodeNumbers="22"/>
+			</div>
+
+		)
+	}
+});
+
+ReactDOM.render(<ShowDetails />, document.getElementById('app'))
