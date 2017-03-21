@@ -1,8 +1,8 @@
 const Shows = require('../shows');
 
-const clickedShow = function(state = [], action){
+const example = function(state = [], action){
 	console.log(state, action);
 	return Shows
 };
 
-module.exports = clickedShow;
+module.exports = example;

@@ -21,25 +21,24 @@ const ShowImage = React.createClass({
 });
 
 const ShowDetails = React.createClass({
-	getInitialState() {
-		return {
-			title: 'example',
-			image: '/images/gaycation.jpg',
-			episodeNumber: '22'
-		};
-	},
-	onClick(){
-		this.setState({
-			title: 'example2',
-			image: '/images/gaycation.jpg',
-			episodeNumber: '23'
-		})
-	},
+	// getInitialState() {
+	// 	return {
+	// 		title: 'example',
+	// 		image: '/images/gaycation.jpg',
+	// 		episodeNumber: '22'
+	// 	};
+	// },
+	// onClick(){
+	// 	this.setState({
+	// 		title: 'example2',
+	// 		image: '/images/gaycation.jpg',
+	// 		episodeNumber: '23'
+	// 	})
+	// },
 	render(){
 		return (
 			<div>
-				<ShowTitle showTitle = {this.state.title} />
-				w
+				<Link to="/:id"><ShowTitle showTitle = {this.state.title}/></Link>
 				<EpisodeNumbers episodeNumbers= {this.state.episodeNumber}/>
 				<h1>{Shows[3].title}</h1>
 			</div>

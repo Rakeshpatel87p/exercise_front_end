@@ -3,8 +3,9 @@ const
 	combineReducers = Redux.combineReducers,
 	routerRedux = require('react-router-redux'),
 	routerReducer = routerRedux.routerReducer,
-	clickedShow = require('./clickedShow');
+	clickedShow = require('./clickedShow'),
+	example = require('./example')
 
-const rootReducer = combineReducers({clickedShow, routing: routerReducer});
+const rootReducer = combineReducers({clickedShow, example, routing: routerReducer});
 
 module.exports = rootReducer;
