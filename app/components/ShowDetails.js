@@ -37,9 +37,9 @@ const ShowDetails = React.createClass({
 	},
 	render(){
 		return (
-			<div onClick={this.onClick}>
+			<div>
 				<ShowTitle showTitle = {this.state.title} />
-				<ShowImage showImage= {this.state.image} />
+				w
 				<EpisodeNumbers episodeNumbers= {this.state.episodeNumber}/>
 				<h1>{Shows[3].title}</h1>
 			</div>
