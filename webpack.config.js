@@ -14,10 +14,16 @@ module.exports = {
         filename: 'main_bundle.js'
     },
     module: {
-        loaders: [{
+        rules: [{
             test: /\.js$/,
             exclude: /node_modules/,
-            loader: 'babel-loader'
+            use: 'babel-loader'
+        }]
+    },
+    module: {
+        rules: [{
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader']
         }]
     },
     plugins: [HtmlWebpackPluginConfig]
