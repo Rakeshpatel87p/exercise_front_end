@@ -10,12 +10,12 @@ const
 	ShowDetails = require('../components/ShowDetails'),
 	Provider = require('react-redux').Provider,
 	Store = require('../store'),
-	history1 = syncHistoryWithStore(browserHistory, Store);
+	History1 = require('../store') 	
 	// BrowserHistory = ('../store');
 	// const { Provider } = ReactRedux;
 
 const routes = (
-	<Router history={history1}>
+	<Router history={History1}>
 		<Route path="/" component={Main}>
         	<IndexRoute component={ShowsList} />
         		<Route path="/:id" component={ShowDetails} />
