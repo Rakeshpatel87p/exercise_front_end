@@ -1,6 +1,5 @@
-const 
-	React = require('react'),
-	ReactDOM = require('react-dom'),
-	ShowDetails = require('./components/ShowDetails');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {routes} from '../app/routes/routes';
 
-ReactDOM.render(<ShowDetails />, document.getElementById('app'))
+ReactDOM.render(routes, document.getElementById('app'))

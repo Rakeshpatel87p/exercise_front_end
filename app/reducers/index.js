@@ -1,10 +1,12 @@
 const actions = require('./actions/index');
-const initialRepositoryState = [];
+const Shows = require('../shows');
+const initialRepositoryState = Shows;
 
 const nextShow_forwardClick = function(state, action){
 	state = state || initialRepositoryState;
 	
 	if (action.type === actions.FORWARD_CLICK){
+		
 		return state.concat({
 			name: action.content
 
