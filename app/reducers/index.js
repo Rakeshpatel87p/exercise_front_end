@@ -1,23 +1,7 @@
-const actions = require('./actions/index');
-const Shows = require('../shows');
-const initialRepositoryState = Shows;
+import {combineReducers} from 'redux';
+import {routerReducer} from 'react-router-redux';
+import clickedShow from './clickedShow';
 
-const nextShow_forwardClick = function(state, action){
-	state = state || initialRepositoryState;
-	
-	if (action.type === actions.FORWARD_CLICK){
-		
-		return state.concat({
-			name: action.content
+const rootReducer = combineReducers({clickedShow, router: routerReducer});
 
-		});
-	}
-	else if (action.type === actions.BACKWARD_CLICK) {
-		return state.concat({
-			name: action.content
-		})
-	}
-	// else { determine value and return next one}
-}
-
-exports.nextShow_forwardClick = nextShow_forwardClick;
+export default rootReducer;
