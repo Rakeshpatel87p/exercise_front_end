@@ -1,7 +1,10 @@
-import {combineReducers} from 'redux';
-import {routerReducer} from 'react-router-redux';
-import clickedShow from './clickedShow';
+const 
+	Redux = require('redux'),
+	combineReducers = Redux.combineReducers,
+	routerRedux = require('react-router-redux'),
+	routerReducer = routerRedux.routerReducer,
+	clickedShow = require('./clickedShow');
 
-const rootReducer = combineReducers({clickedShow, router: routerReducer});
+const rootReducer = combineReducers({clickedShow, routing: routerReducer});
 
-export default rootReducer;
+module.exports = rootReducer;

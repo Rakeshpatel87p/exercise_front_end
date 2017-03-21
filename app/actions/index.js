@@ -6,5 +6,5 @@ const imageClick = function(clickedImage){
 	}
 }
 
-exports.IMAGE_CLICK = IMAGE_CLICK;
-exports.imageClick = imageClick;
+module.exports = IMAGE_CLICK;
+module.exports = imageClick;
