@@ -14,17 +14,34 @@ module.exports = {
         filename: 'main_bundle.js'
     },
     module: {
-        rules: [{
-            test: /\.js$/,
-            exclude: /node_modules/,
-            use: 'babel-loader'
-        }]
-    },
-    module: {
-        rules: [{
+        loaders: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: 'babel-loader',
+            },
+
+            {
+
             test: /\.css$/,
             use: ['style-loader', 'css-loader']
-        }]
+
+            }
+
+        ]
     },
+    // module: {
+    //     rules: [{
+    //         test: /\.js$/,
+    //         exclude: /node_modules/,
+    //         use: 'babel-loader',
+    //     }]
+    // },
+    // module: {
+    //     rules: [{
+    //         test: /\.css$/,
+    //         use: ['style-loader', 'css-loader']
+    //     }]
+    // },
     plugins: [HtmlWebpackPluginConfig]
 }
