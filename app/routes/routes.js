@@ -10,7 +10,7 @@ const
 	ShowDetails = require('../components/ShowDetails'),
 	Provider = require('react-redux').Provider,
 	Store = require('../store'),
-	History1 = require('../store') 	
+	History1 = require('../store'); 	
 	// BrowserHistory = ('../store');
 	// const { Provider } = ReactRedux;
 
