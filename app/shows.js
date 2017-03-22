@@ -61,4 +61,4 @@ const Shows = [
   },
 ]
 
-module.exports = Shows;
+export default Shows;

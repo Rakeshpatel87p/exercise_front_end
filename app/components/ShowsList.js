@@ -1,6 +1,6 @@
-const 
-	React = require('react'),
-	Shows = require('../shows');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Shows from '../shows';
 
 
 const ShowsList = React.createClass({
@@ -18,4 +18,4 @@ const ShowsList = React.createClass({
 	}
 });
 
-module.exports = ShowsList;
+export default ShowsList;

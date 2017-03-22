@@ -1,11 +1,8 @@
-const 
-	Redux = require('redux'),
-	combineReducers = Redux.combineReducers,
-	routerRedux = require('react-router-redux'),
-	routerReducer = routerRedux.routerReducer,
-	showReducer = require('./showReducer'),
-	example = require('./example');
+import {combineReducers} from 'redux';
+import {routerReducer} from 'react-router-redux';
+import showReducer from './showReducer';
+import example from './example';
 
 const rootReducer = combineReducers({showReducer, routing: routerReducer});
 
-module.exports = rootReducer;
+export default rootReducer;

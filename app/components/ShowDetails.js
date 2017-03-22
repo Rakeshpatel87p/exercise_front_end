@@ -1,6 +1,5 @@
-const 
-	React = require('react'),
-	Shows = require('../shows');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 const ShowTitle = React.createClass({
 	render(){
@@ -47,4 +46,4 @@ const ShowDetails = React.createClass({
 	}
 });
 
-module.exports = ShowDetails;
+export default ShowDetails;

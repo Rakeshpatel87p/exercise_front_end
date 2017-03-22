@@ -1,8 +1,6 @@
-const Shows = require('../shows');
-
 const example = function(state = [], action){
 	console.log(state, action);
-	return Shows
+	return state;
 };
 
-module.exports = example;
+export default example;

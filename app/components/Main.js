@@ -1,6 +1,9 @@
-const 
-	React = require('react'),
-	ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+// const 
+// 	React = require('react'),
+// 	ReactDOM = require('react-dom');
 
 const Main = React.createClass({
 	render(){
@@ -14,4 +17,4 @@ const Main = React.createClass({
 	}
 });
 
-module.exports = Main;
+export default Main;

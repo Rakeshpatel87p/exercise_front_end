@@ -4,4 +4,4 @@ const imageClick = function(clickedImage){
 		content: clickedImage
 	}
 }
-module.exports = imageClick;
+export default imageClick;
