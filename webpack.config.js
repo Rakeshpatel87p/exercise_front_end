@@ -23,25 +23,12 @@ module.exports = {
 
             {
 
-            test: /\.css$/,
-            use: ['style-loader', 'css-loader']
+            test: /\.scss$/,
+            use: ['style-loader', 'css-loader', 'sass-loader']
 
             }
 
         ]
     },
-    // module: {
-    //     rules: [{
-    //         test: /\.js$/,
-    //         exclude: /node_modules/,
-    //         use: 'babel-loader',
-    //     }]
-    // },
-    // module: {
-    //     rules: [{
-    //         test: /\.css$/,
-    //         use: ['style-loader', 'css-loader']
-    //     }]
-    // },
     plugins: [HtmlWebpackPluginConfig]
 }

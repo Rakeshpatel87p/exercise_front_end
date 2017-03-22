@@ -2,7 +2,7 @@ const
 	React = require('react'),
 	ReactDOM = require('react-dom'),
 	// routes = require('../app/routes/routes');
-	css = require('./styles/main.css');
+	css = require('./styles/main.scss');
 
 const Sample = React.createClass({
 	render(){
