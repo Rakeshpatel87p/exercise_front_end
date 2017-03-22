@@ -14,18 +14,15 @@ module.exports = {
         filename: 'main_bundle.js'
     },
     module: {
-        loaders: [
-            {
+        loaders: [{
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: 'babel-loader',
             },
 
             {
-
-            test: /\.scss$/,
-            use: ['style-loader', 'css-loader', 'sass-loader']
-
+                test: /\.scss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
             }
 
         ]
