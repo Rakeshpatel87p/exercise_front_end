@@ -15,12 +15,14 @@ const
 	// const { Provider } = ReactRedux;
 
 const routes = (
-	<Router history={History1}>
-		<Route path="/" component={Main}>
-        	<IndexRoute component={ShowsList} />
-        		<Route path="/:id" component={ShowDetails} />
-    	</Route>
-	</Router>
+	<Provider store={Store}>
+		<Router history={History1}>
+			<Route path="/" component={Main}>
+	        	<IndexRoute component={ShowsList} />
+	        		<Route path="/:id" component={ShowDetails} />
+	    	</Route>
+		</Router>
+		</Provider>
 )
 
 module.exports = routes;

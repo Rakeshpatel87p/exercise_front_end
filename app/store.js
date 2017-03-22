@@ -3,15 +3,15 @@ const
 	createStore = Redux.createStore,
 	compose = Redux.compose,
 	syncHistoryWithStore = require('react-router-redux').syncHistoryWithStore,
-	browserHistory = require('react-router'),
+	browserHistory = require('react-router').browserHistory,
 	rootReducer = require('./reducers/index'),
-	Shows = require('./shows');
+	showReducer = require('./shows');
 
 // Create an obj from default data. 
 
 const defaultState = {
 	// yo peep, what's going on here? 
-	Shows
+	showReducer
 }
 
 const Store = createStore(rootReducer, defaultState);
