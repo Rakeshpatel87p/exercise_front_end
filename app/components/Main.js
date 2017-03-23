@@ -1,10 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// const 
-// 	React = require('react'),
-// 	ReactDOM = require('react-dom');
-
 const Main = React.createClass({
 	render(){
 		return (
